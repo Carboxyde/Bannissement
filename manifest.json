@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+"name": "Banissement",
+"description": "Permet de bannir les sites indésirables",
+"version": "1.0",
+"icons": {
+"128": "128.png"
+},
+"background": {
+  "scripts": ["background.js"],
+  "persistent": false
+},
+"options_page": "options.html",
+"permissions": ["activeTab", "declarativeContent", "storage", "tabs"],
+"page_action": {
+  "default_popup": "popup.html",
+  "default_icon": {
+    "128": "128.png"
+  }
+}
+}
